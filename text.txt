@@ -1,0 +1,1421 @@
+<html><head>
+        <meta charset="utf-8">
+
+        <title>Embed tests</title>
+
+        <style type="text/css">
+            body { font-family: Helvetica, Arial, sans-serif; min-width: 650px; margin: 0; padding: 0;}
+            a { color: inherit; font-size: 0.9em; }
+            a:hover { text-decoration: none; }
+            img { display: block; margin-bottom: 0.5em; }
+            pre { overflow: auto; background: #EEE; padding: 1em; }
+
+            /* form */
+            form { background: #EEE; border-bottom: solid 1px #DDD; color: #666; padding: 3em 1.5em; }
+            fieldset { border: none; padding: 0; }
+            label { display: block; cursor: pointer; font-weight: bold; }
+            input[type="url"] { border: none; background: white; border-radius: 2px; box-sizing: border-box; width: 100%; margin: 5px 0; font-size: 1.3em; padding: 0.5em; color: #666; }
+            button { font-size: 1.6rem; font-weight: bold; font-family: Arial; background: yellowgreen; border: none; border-radius: 2px; padding: 0.2em 1em; cursor: pointer; margin-top: 5px; }
+            button:hover { background: black; color: white; }
+
+            /* result */
+            section { padding: 1.5em; }
+            section h1, section h2 { font-size: 2em; color: #666; letter-spacing: -0.02em; }
+            section h2 { margin-top: 3em; }
+            table { text-align: left; width: 100%; table-layout: fixed; }
+            th, td { vertical-align: top; padding: 0.5em 1em 0.5em 0; border-top: solid 1px #DDD; }
+            th { width: 200px; }
+            #advanced-data { display: none; }
+            .view-advanced-data { margin: 2em 0; text-align: center; }
+        </style>
+    </head>
+
+    <body>
+        <form action="index.php">
+            <fieldset class="main">
+                <label>
+                    <span>Url to test:</span>
+                    <input type="url" name="url" autofocus="" placeholder="http://" value="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/">
+                </label>
+            </fieldset>
+
+            <fieldset class="action">
+                <button type="submit">Test</button>
+                &nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/oscarotero/Embed/">Get the source code from Github</a>
+                &nbsp;&nbsp; - &nbsp;&nbsp;
+                <a href="javascript:(function(){window.open('http://oscarotero.com/embed3/demo/index.php?url='+document.location)})();">or the bookmarklet</a>
+            </fieldset>
+        </form>
+
+                <section>
+            <h1>Result:</h1>
+
+            
+            <table>
+                                <tbody><tr>
+                    <th>title</th>
+                    <td>How to scrape any web page with Node and return the metadata as JSON</td>
+                </tr>
+                                <tr>
+                    <th>description</th>
+                    <td>Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app’s tab and the …</td>
+                </tr>
+                                <tr>
+                    <th>url</th>
+                    <td>        <a href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/" target="_blank">Open (new window)</a> | https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/</td>
+                </tr>
+                                <tr>
+                    <th>type</th>
+                    <td>rich</td>
+                </tr>
+                                <tr>
+                    <th>tags</th>
+                    <td><pre>Array
+(
+    [0] =&gt; JavaScript
+    [1] =&gt; json
+    [2] =&gt; metadata
+    [3] =&gt; node
+    [4] =&gt; scrape
+)
+</pre></td>
+                </tr>
+                                <tr>
+                    <th>image</th>
+                    <td>        <img src="https://sub1.kevinchisholm.com/blog/images/node-js-logo.png"><br>        <a href="https://sub1.kevinchisholm.com/blog/images/node-js-logo.png" target="_blank">Open (new window)</a> | https://sub1.kevinchisholm.com/blog/images/node-js-logo.png</td>
+                </tr>
+                                <tr>
+                    <th>imageWidth</th>
+                    <td>400</td>
+                </tr>
+                                <tr>
+                    <th>imageHeight</th>
+                    <td>229</td>
+                </tr>
+                                <tr>
+                    <th>images</th>
+                    <td><pre>Array
+(
+    [0] =&gt; Array
+        (
+            [url] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+            [width] =&gt; 400
+            [height] =&gt; 229
+            [size] =&gt; 91600
+            [mime] =&gt; image/png
+        )
+
+    [1] =&gt; Array
+        (
+            [url] =&gt; https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png
+            [width] =&gt; 500
+            [height] =&gt; 572
+            [size] =&gt; 286000
+            [mime] =&gt; image/png
+        )
+
+    [2] =&gt; Array
+        (
+            [url] =&gt; https://sub1.kevinchisholm.com/blog/images/github-octocat.png
+            [width] =&gt; 800
+            [height] =&gt; 665
+            [size] =&gt; 532000
+            [mime] =&gt; image/png
+        )
+
+)
+</pre></td>
+                </tr>
+                                <tr>
+                    <th>code</th>
+                    <td><blockquote class="wp-embedded-content"><a href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/">How to scrape any web page with Node and return the metadata as JSON</a></blockquote>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+		!function(a,b){"use strict";function c(){if(!e){e=!0;var a,c,d,f,g=-1!==navigator.appVersion.indexOf("MSIE 10"),h=!!navigator.userAgent.match(/Trident.*rv:11\./),i=b.querySelectorAll("iframe.wp-embedded-content");for(c=0;c<i.length;c++){if(d=i[c],!d.getAttribute("data-secret"))f=Math.random().toString(36).substr(2,10),d.src+="#?secret="+f,d.setAttribute("data-secret",f);if(g||h)a=d.cloneNode(!0),a.removeAttribute("security"),d.parentNode.replaceChild(a,d)}}}var d=!1,e=!1;if(b.querySelector)if(a.addEventListener)d=!0;if(a.wp=a.wp||{},!a.wp.receiveEmbedMessage)if(a.wp.receiveEmbedMessage=function(c){var d=c.data;if(d)if(d.secret||d.message||d.value)if(!/[^a-zA-Z0-9]/.test(d.secret)){var e,f,g,h,i,j=b.querySelectorAll('iframe[data-secret="'+d.secret+'"]'),k=b.querySelectorAll('blockquote[data-secret="'+d.secret+'"]');for(e=0;e<k.length;e++)k[e].style.display="none";for(e=0;e<j.length;e++)if(f=j[e],c.source===f.contentWindow){if(f.removeAttribute("style"),"height"===d.message){if(g=parseInt(d.value,10),g>1e3)g=1e3;else if(~~g<200)g=200;f.height=g}if("link"===d.message)if(h=b.createElement("a"),i=b.createElement("a"),h.href=f.getAttribute("src"),i.href=d.value,i.host===h.host)if(b.activeElement===f)a.top.location.href=d.value}else;}},d)a.addEventListener("message",a.wp.receiveEmbedMessage,!1),b.addEventListener("DOMContentLoaded",c,!1),a.addEventListener("load",c,!1)}(window,document);
+//--><!]]>
+</script><iframe sandbox="allow-scripts" security="restricted" src="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/embed/#?secret=91u9nqfw2m" width="600" height="359" title="“How to scrape any web page with Node and return the metadata as JSON” — Kevin Chisholm - Blog" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content" data-secret="91u9nqfw2m"></iframe><pre>&lt;blockquote class="wp-embedded-content"&gt;&lt;a href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/"&gt;How to scrape any web page with Node and return the metadata as JSON&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script type='text/javascript'&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+		!function(a,b){"use strict";function c(){if(!e){e=!0;var a,c,d,f,g=-1!==navigator.appVersion.indexOf("MSIE 10"),h=!!navigator.userAgent.match(/Trident.*rv:11\./),i=b.querySelectorAll("iframe.wp-embedded-content");for(c=0;c&lt;i.length;c++){if(d=i[c],!d.getAttribute("data-secret"))f=Math.random().toString(36).substr(2,10),d.src+="#?secret="+f,d.setAttribute("data-secret",f);if(g||h)a=d.cloneNode(!0),a.removeAttribute("security"),d.parentNode.replaceChild(a,d)}}}var d=!1,e=!1;if(b.querySelector)if(a.addEventListener)d=!0;if(a.wp=a.wp||{},!a.wp.receiveEmbedMessage)if(a.wp.receiveEmbedMessage=function(c){var d=c.data;if(d)if(d.secret||d.message||d.value)if(!/[^a-zA-Z0-9]/.test(d.secret)){var e,f,g,h,i,j=b.querySelectorAll('iframe[data-secret="'+d.secret+'"]'),k=b.querySelectorAll('blockquote[data-secret="'+d.secret+'"]');for(e=0;e&lt;k.length;e++)k[e].style.display="none";for(e=0;e&lt;j.length;e++)if(f=j[e],c.source===f.contentWindow){if(f.removeAttribute("style"),"height"===d.message){if(g=parseInt(d.value,10),g&gt;1e3)g=1e3;else if(~~g&lt;200)g=200;f.height=g}if("link"===d.message)if(h=b.createElement("a"),i=b.createElement("a"),h.href=f.getAttribute("src"),i.href=d.value,i.host===h.host)if(b.activeElement===f)a.top.location.href=d.value}else;}},d)a.addEventListener("message",a.wp.receiveEmbedMessage,!1),b.addEventListener("DOMContentLoaded",c,!1),a.addEventListener("load",c,!1)}(window,document);
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;iframe sandbox="allow-scripts" security="restricted" src="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/embed/" width="600" height="338" title="&amp;#8220;How to scrape any web page with Node and return the metadata as JSON&amp;#8221; &amp;#8212; Kevin Chisholm - Blog" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"&gt;&lt;/iframe&gt;</pre></td>
+                </tr>
+                                <tr>
+                    <th>feeds</th>
+                    <td><pre>Array
+(
+    [0] =&gt; https://blog.kevinchisholm.com/feed/
+    [1] =&gt; https://blog.kevinchisholm.com/comments/feed/
+    [2] =&gt; https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/feed/
+)
+</pre></td>
+                </tr>
+                                <tr>
+                    <th>width</th>
+                    <td>600</td>
+                </tr>
+                                <tr>
+                    <th>height</th>
+                    <td>338</td>
+                </tr>
+                                <tr>
+                    <th>aspectRatio</th>
+                    <td>56.333</td>
+                </tr>
+                                <tr>
+                    <th>authorName</th>
+                    <td>dcm</td>
+                </tr>
+                                <tr>
+                    <th>authorUrl</th>
+                    <td>        <a href="https://blog.kevinchisholm.com/author/dcm/" target="_blank">Open (new window)</a> | https://blog.kevinchisholm.com/author/dcm/</td>
+                </tr>
+                                <tr>
+                    <th>providerIcon</th>
+                    <td></td>
+                </tr>
+                                <tr>
+                    <th>providerIcons</th>
+                    <td></td>
+                </tr>
+                                <tr>
+                    <th>providerName</th>
+                    <td>Kevin Chisholm - Blog</td>
+                </tr>
+                                <tr>
+                    <th>providerUrl</th>
+                    <td>        <a href="https://blog.kevinchisholm.com" target="_blank">Open (new window)</a> | https://blog.kevinchisholm.com</td>
+                </tr>
+                                <tr>
+                    <th>publishedTime</th>
+                    <td>2017-05-18T00:30:47-05:00</td>
+                </tr>
+                                <tr>
+                    <th>license</th>
+                    <td></td>
+                </tr>
+                            </tbody></table>
+
+            <div class="view-advanced-data">
+                <button onclick="document.getElementById('advanced-data').style.display = 'block'; this.style.display = 'none';" style="display: none;">View all collected data</button>
+            </div>
+
+            <div id="advanced-data" style="display: block;">
+                                <h2>oembed provider</h2>
+
+                
+                <table>
+                                                            <tbody><tr>
+                        <th>oembed.title</th>
+                        <td>How to scrape any web page with Node and return the metadata as JSON</td>
+                    </tr>
+                                                                                                                                                                <tr>
+                        <th>oembed.type</th>
+                        <td>rich</td>
+                    </tr>
+                                                                                                                                                                <tr>
+                        <th>oembed.code</th>
+                        <td><pre>&lt;blockquote class="wp-embedded-content"&gt;&lt;a href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/"&gt;How to scrape any web page with Node and return the metadata as JSON&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script type='text/javascript'&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+		!function(a,b){"use strict";function c(){if(!e){e=!0;var a,c,d,f,g=-1!==navigator.appVersion.indexOf("MSIE 10"),h=!!navigator.userAgent.match(/Trident.*rv:11\./),i=b.querySelectorAll("iframe.wp-embedded-content");for(c=0;c&lt;i.length;c++){if(d=i[c],!d.getAttribute("data-secret"))f=Math.random().toString(36).substr(2,10),d.src+="#?secret="+f,d.setAttribute("data-secret",f);if(g||h)a=d.cloneNode(!0),a.removeAttribute("security"),d.parentNode.replaceChild(a,d)}}}var d=!1,e=!1;if(b.querySelector)if(a.addEventListener)d=!0;if(a.wp=a.wp||{},!a.wp.receiveEmbedMessage)if(a.wp.receiveEmbedMessage=function(c){var d=c.data;if(d)if(d.secret||d.message||d.value)if(!/[^a-zA-Z0-9]/.test(d.secret)){var e,f,g,h,i,j=b.querySelectorAll('iframe[data-secret="'+d.secret+'"]'),k=b.querySelectorAll('blockquote[data-secret="'+d.secret+'"]');for(e=0;e&lt;k.length;e++)k[e].style.display="none";for(e=0;e&lt;j.length;e++)if(f=j[e],c.source===f.contentWindow){if(f.removeAttribute("style"),"height"===d.message){if(g=parseInt(d.value,10),g&gt;1e3)g=1e3;else if(~~g&lt;200)g=200;f.height=g}if("link"===d.message)if(h=b.createElement("a"),i=b.createElement("a"),h.href=f.getAttribute("src"),i.href=d.value,i.host===h.host)if(b.activeElement===f)a.top.location.href=d.value}else;}},d)a.addEventListener("message",a.wp.receiveEmbedMessage,!1),b.addEventListener("DOMContentLoaded",c,!1),a.addEventListener("load",c,!1)}(window,document);
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;iframe sandbox="allow-scripts" security="restricted" src="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/embed/" width="600" height="338" title="&amp;#8220;How to scrape any web page with Node and return the metadata as JSON&amp;#8221; &amp;#8212; Kevin Chisholm - Blog" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"&gt;&lt;/iframe&gt;</pre></td>
+                    </tr>
+                                                                                                                        <tr>
+                        <th>oembed.width</th>
+                        <td>600</td>
+                    </tr>
+                                                                                <tr>
+                        <th>oembed.height</th>
+                        <td>338</td>
+                    </tr>
+                                                                                <tr>
+                        <th>oembed.authorName</th>
+                        <td>dcm</td>
+                    </tr>
+                                                                                <tr>
+                        <th>oembed.authorUrl</th>
+                        <td>        <a href="https://blog.kevinchisholm.com/author/dcm/" target="_blank">Open (new window)</a> | https://blog.kevinchisholm.com/author/dcm/</td>
+                    </tr>
+                                                                                                                        <tr>
+                        <th>oembed.providerName</th>
+                        <td>Kevin Chisholm - Blog</td>
+                    </tr>
+                                                                                <tr>
+                        <th>oembed.providerUrl</th>
+                        <td>        <a href="https://blog.kevinchisholm.com" target="_blank">Open (new window)</a> | https://blog.kevinchisholm.com</td>
+                    </tr>
+                                                                                                                        
+                    <tr>
+                        <th>All data collected</th>
+                        <td><pre>Array
+(
+    [version] =&gt; 1.0
+    [provider_name] =&gt; Kevin Chisholm - Blog
+    [provider_url] =&gt; https://blog.kevinchisholm.com
+    [author_name] =&gt; dcm
+    [author_url] =&gt; https://blog.kevinchisholm.com/author/dcm/
+    [title] =&gt; How to scrape any web page with Node and return the metadata as JSON
+    [type] =&gt; rich
+    [width] =&gt; 600
+    [height] =&gt; 338
+    [html] =&gt; &lt;blockquote class="wp-embedded-content"&gt;&lt;a href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/"&gt;How to scrape any web page with Node and return the metadata as JSON&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script type='text/javascript'&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+		!function(a,b){"use strict";function c(){if(!e){e=!0;var a,c,d,f,g=-1!==navigator.appVersion.indexOf("MSIE 10"),h=!!navigator.userAgent.match(/Trident.*rv:11\./),i=b.querySelectorAll("iframe.wp-embedded-content");for(c=0;c&lt;i.length;c++){if(d=i[c],!d.getAttribute("data-secret"))f=Math.random().toString(36).substr(2,10),d.src+="#?secret="+f,d.setAttribute("data-secret",f);if(g||h)a=d.cloneNode(!0),a.removeAttribute("security"),d.parentNode.replaceChild(a,d)}}}var d=!1,e=!1;if(b.querySelector)if(a.addEventListener)d=!0;if(a.wp=a.wp||{},!a.wp.receiveEmbedMessage)if(a.wp.receiveEmbedMessage=function(c){var d=c.data;if(d)if(d.secret||d.message||d.value)if(!/[^a-zA-Z0-9]/.test(d.secret)){var e,f,g,h,i,j=b.querySelectorAll('iframe[data-secret="'+d.secret+'"]'),k=b.querySelectorAll('blockquote[data-secret="'+d.secret+'"]');for(e=0;e&lt;k.length;e++)k[e].style.display="none";for(e=0;e&lt;j.length;e++)if(f=j[e],c.source===f.contentWindow){if(f.removeAttribute("style"),"height"===d.message){if(g=parseInt(d.value,10),g&gt;1e3)g=1e3;else if(~~g&lt;200)g=200;f.height=g}if("link"===d.message)if(h=b.createElement("a"),i=b.createElement("a"),h.href=f.getAttribute("src"),i.href=d.value,i.host===h.host)if(b.activeElement===f)a.top.location.href=d.value}else;}},d)a.addEventListener("message",a.wp.receiveEmbedMessage,!1),b.addEventListener("DOMContentLoaded",c,!1),a.addEventListener("load",c,!1)}(window,document);
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;&lt;iframe sandbox="allow-scripts" security="restricted" src="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/embed/" width="600" height="338" title="&amp;#8220;How to scrape any web page with Node and return the metadata as JSON&amp;#8221; &amp;#8212; Kevin Chisholm - Blog" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"&gt;&lt;/iframe&gt;
+)
+</pre></td>
+                    </tr>
+                </tbody></table>
+                                <h2>opengraph provider</h2>
+
+                
+                <table>
+                                                            <tbody><tr>
+                        <th>opengraph.title</th>
+                        <td>How to scrape any web page with Node and return the metadata as JSON - Kevin Chisholm - Blog</td>
+                    </tr>
+                                                                                <tr>
+                        <th>opengraph.description</th>
+                        <td>Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app’s tab and the …</td>
+                    </tr>
+                                                                                <tr>
+                        <th>opengraph.url</th>
+                        <td>        <a href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/" target="_blank">Open (new window)</a> | https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/</td>
+                    </tr>
+                                                                                <tr>
+                        <th>opengraph.type</th>
+                        <td>link</td>
+                    </tr>
+                                                                                <tr>
+                        <th>opengraph.tags</th>
+                        <td><pre>Array
+(
+    [0] =&gt; JavaScript
+    [1] =&gt; json
+    [2] =&gt; metadata
+    [3] =&gt; node
+    [4] =&gt; scrape
+)
+</pre></td>
+                    </tr>
+                                                                                <tr>
+                        <th>opengraph.imagesUrls</th>
+                        <td><pre>Array
+(
+    [0] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+    [1] =&gt; https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png
+    [2] =&gt; https://sub1.kevinchisholm.com/blog/images/github-octocat.png
+)
+</pre></td>
+                    </tr>
+                                                                                                                                                                                                                                                                                                                                                                        <tr>
+                        <th>opengraph.providerName</th>
+                        <td>Kevin Chisholm - Blog</td>
+                    </tr>
+                                                                                                                        <tr>
+                        <th>opengraph.publishedTime</th>
+                        <td>2017-05-18T00:30:47-05:00</td>
+                    </tr>
+                                                                                
+                    <tr>
+                        <th>All data collected</th>
+                        <td><pre>Array
+(
+    [locale] =&gt; en_US
+    [type] =&gt; article
+    [title] =&gt; How to scrape any web page with Node and return the metadata as JSON - Kevin Chisholm - Blog
+    [description] =&gt; Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app’s tab and the …
+    [url] =&gt; https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/
+    [site_name] =&gt; Kevin Chisholm - Blog
+    [tags] =&gt; Array
+        (
+            [0] =&gt; JavaScript
+            [1] =&gt; json
+            [2] =&gt; metadata
+            [3] =&gt; node
+            [4] =&gt; scrape
+        )
+
+    [article:section] =&gt; Node.js
+    [article:published_time] =&gt; 2017-05-18T00:30:47-05:00
+    [article:modified_time] =&gt; 2018-02-13T18:09:11-05:00
+    [updated_time] =&gt; 2018-02-13T18:09:11-05:00
+    [images] =&gt; Array
+        (
+            [0] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+            [1] =&gt; https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png
+            [2] =&gt; https://sub1.kevinchisholm.com/blog/images/github-octocat.png
+        )
+
+)
+</pre></td>
+                    </tr>
+                </tbody></table>
+                                <h2>linkpulse provider</h2>
+
+                                <p>No data collected</p>
+                                <h2>twittercards provider</h2>
+
+                
+                <table>
+                                                            <tbody><tr>
+                        <th>twittercards.title</th>
+                        <td>How to scrape any web page with Node and return the metadata as JSON - Kevin Chisholm - Blog</td>
+                    </tr>
+                                                                                <tr>
+                        <th>twittercards.description</th>
+                        <td>Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app’s tab and the […]</td>
+                    </tr>
+                                                                                                                                                                                                        <tr>
+                        <th>twittercards.imagesUrls</th>
+                        <td><pre>Array
+(
+    [0] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+)
+</pre></td>
+                    </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                    <tr>
+                        <th>All data collected</th>
+                        <td><pre>Array
+(
+    [card] =&gt; summary
+    [description] =&gt; Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app’s tab and the […]
+    [title] =&gt; How to scrape any web page with Node and return the metadata as JSON - Kevin Chisholm - Blog
+    [images] =&gt; Array
+        (
+            [0] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+        )
+
+)
+</pre></td>
+                    </tr>
+                </tbody></table>
+                                <h2>dcterms provider</h2>
+
+                                <p>No data collected</p>
+                                <h2>sailthru provider</h2>
+
+                                <p>No data collected</p>
+                                <h2>html provider</h2>
+
+                
+                <table>
+                                                            <tbody><tr>
+                        <th>html.title</th>
+                        <td>How to scrape any web page and return the metadata as JSON | Kevin Chisholm - Blog</td>
+                    </tr>
+                                                                                <tr>
+                        <th>html.description</th>
+                        <td>Let node.js scrape the page and get the title, description, keywords and image tags for you.</td>
+                    </tr>
+                                                                                <tr>
+                        <th>html.url</th>
+                        <td>        <a href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/" target="_blank">Open (new window)</a> | https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/</td>
+                    </tr>
+                                                                                                                                                                <tr>
+                        <th>html.imagesUrls</th>
+                        <td><pre>Array
+(
+    [0] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+    [1] =&gt; https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png
+)
+</pre></td>
+                    </tr>
+                                                                                                                        <tr>
+                        <th>html.feeds</th>
+                        <td><pre>Array
+(
+    [0] =&gt; https://blog.kevinchisholm.com/feed/
+    [1] =&gt; https://blog.kevinchisholm.com/comments/feed/
+    [2] =&gt; https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/feed/
+)
+</pre></td>
+                    </tr>
+                                                                                                                                                                                                                                                                                                                                                                        <tr>
+                        <th>html.publishedTime</th>
+                        <td>2017-05-18T00:30:47-05:00</td>
+                    </tr>
+                                                                                
+                    <tr>
+                        <th>All data collected</th>
+                        <td><pre>Array
+(
+    [profile] =&gt; http://gmpg.org/xfn/11
+    [pingback] =&gt; https://blog.kevinchisholm.com/xmlrpc.php
+    [canonical] =&gt; https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/
+    [dns-prefetch] =&gt; //s.w.org
+    [feeds] =&gt; Array
+        (
+            [0] =&gt; https://blog.kevinchisholm.com/feed/
+            [1] =&gt; https://blog.kevinchisholm.com/comments/feed/
+            [2] =&gt; https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/feed/
+        )
+
+    [stylesheet] =&gt; https://blog.kevinchisholm.com/static/css/font-awesome.min.css
+    [https://api.w.org/] =&gt; https://blog.kevinchisholm.com/wp-json/
+    [edituri] =&gt; https://blog.kevinchisholm.com/xmlrpc.php?rsd
+    [wlwmanifest] =&gt; https://blog.kevinchisholm.com/wp-includes/wlwmanifest.xml
+    [shortlink] =&gt; https://blog.kevinchisholm.com/?p=5273
+    [content-type] =&gt; text/html; charset=utf-8
+    [viewport] =&gt; width=device-width, initial-scale=1
+    [description] =&gt; Let node.js scrape the page and get the title, description, keywords and image tags for you.
+    [og:locale] =&gt; en_US
+    [og:type] =&gt; article
+    [og:title] =&gt; How to scrape any web page with Node and return the metadata as JSON - Kevin Chisholm - Blog
+    [og:description] =&gt; Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app’s tab and the …
+    [og:url] =&gt; https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/
+    [og:site_name] =&gt; Kevin Chisholm - Blog
+    [article:tag] =&gt; scrape
+    [article:section] =&gt; Node.js
+    [article:published_time] =&gt; 2017-05-18T00:30:47-05:00
+    [article:modified_time] =&gt; 2018-02-13T18:09:11-05:00
+    [og:updated_time] =&gt; 2018-02-13T18:09:11-05:00
+    [og:image] =&gt; https://sub1.kevinchisholm.com/blog/images/github-octocat.png
+    [twitter:card] =&gt; summary
+    [twitter:description] =&gt; Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app’s tab and the […]
+    [twitter:title] =&gt; How to scrape any web page with Node and return the metadata as JSON - Kevin Chisholm - Blog
+    [twitter:image] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+    [generator] =&gt; WordPress 4.9.9
+    [images] =&gt; Array
+        (
+            [0] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+            [1] =&gt; https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png
+        )
+
+    [title] =&gt; How to scrape any web page and return the metadata as JSON | Kevin Chisholm - Blog
+)
+</pre></td>
+                    </tr>
+                </tbody></table>
+                
+                <h2>Http requests</h2>
+
+                <table>
+                                        <tbody><tr>
+                        <th>
+                            
+                            https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>Array
+(
+    [date] =&gt; Sat, 02 Mar 2019 16:09:06 GMT
+    [server] =&gt; Apache
+    [x-pingback] =&gt; https://blog.kevinchisholm.com/xmlrpc.php
+    [link] =&gt; &lt;https://blog.kevinchisholm.com/wp-json/&gt;; rel="https://api.w.org/", &lt;https://blog.kevinchisholm.com/?p=5273&gt;; rel=shortlink
+    [vary] =&gt; Accept-Encoding
+    [content-encoding] =&gt; gzip
+    [x-ua-compatible] =&gt; IE=edge
+    [transfer-encoding] =&gt; chunked
+    [content-type] =&gt; text/html; charset=UTF-8
+)
+</pre>                            <pre>Array
+(
+    [url] =&gt; https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/
+    [content_type] =&gt; text/html; charset=UTF-8
+    [http_code] =&gt; 200
+    [header_size] =&gt; 400
+    [request_size] =&gt; 180
+    [filetime] =&gt; -1
+    [ssl_verify_result] =&gt; 0
+    [redirect_count] =&gt; 0
+    [total_time] =&gt; 1.943273
+    [namelookup_time] =&gt; 0.028464
+    [connect_time] =&gt; 0.152571
+    [pretransfer_time] =&gt; 0.422312
+    [size_upload] =&gt; 0
+    [size_download] =&gt; 15636
+    [speed_download] =&gt; 8047
+    [speed_upload] =&gt; 0
+    [download_content_length] =&gt; -1
+    [upload_content_length] =&gt; -1
+    [starttransfer_time] =&gt; 1.89831
+    [redirect_time] =&gt; 0
+    [redirect_url] =&gt; 
+    [primary_ip] =&gt; 184.168.173.76
+    [certinfo] =&gt; Array
+        (
+        )
+
+    [primary_port] =&gt; 443
+    [local_ip] =&gt; 142.93.47.165
+    [local_port] =&gt; 43958
+)
+</pre>                        </td>
+                    </tr>
+                                        <tr>
+                        <th>
+                            
+                            https://blog.kevinchisholm.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kevinchisholm.com%2Fjavascript%2Fnode-js%2Fscrape-web-page-return-metadata-json%2F&amp;format=json                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>Array
+(
+    [date] =&gt; Sat, 02 Mar 2019 16:09:08 GMT
+    [server] =&gt; Apache
+    [x-robots-tag] =&gt; noindex
+    [link] =&gt; &lt;https://blog.kevinchisholm.com/wp-json/&gt;; rel="https://api.w.org/"
+    [x-content-type-options] =&gt; nosniff
+    [access-control-expose-headers] =&gt; X-WP-Total, X-WP-TotalPages
+    [access-control-allow-headers] =&gt; Authorization, Content-Type
+    [allow] =&gt; GET
+    [x-ua-compatible] =&gt; IE=edge
+    [transfer-encoding] =&gt; chunked
+    [content-type] =&gt; application/json; charset=UTF-8
+)
+</pre>                            <pre>Array
+(
+    [url] =&gt; https://blog.kevinchisholm.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kevinchisholm.com%2Fjavascript%2Fnode-js%2Fscrape-web-page-return-metadata-json%2F&amp;format=json
+    [content_type] =&gt; application/json; charset=UTF-8
+    [http_code] =&gt; 200
+    [header_size] =&gt; 435
+    [request_size] =&gt; 266
+    [filetime] =&gt; -1
+    [ssl_verify_result] =&gt; 0
+    [redirect_count] =&gt; 0
+    [total_time] =&gt; 1.425345
+    [namelookup_time] =&gt; 2.5E-5
+    [connect_time] =&gt; 0.123988
+    [pretransfer_time] =&gt; 0.391415
+    [size_upload] =&gt; 0
+    [size_download] =&gt; 2527
+    [speed_download] =&gt; 1773
+    [speed_upload] =&gt; 0
+    [download_content_length] =&gt; -1
+    [upload_content_length] =&gt; -1
+    [starttransfer_time] =&gt; 1.425166
+    [redirect_time] =&gt; 0
+    [redirect_url] =&gt; 
+    [primary_ip] =&gt; 184.168.173.76
+    [certinfo] =&gt; Array
+        (
+        )
+
+    [primary_port] =&gt; 443
+    [local_ip] =&gt; 142.93.47.165
+    [local_port] =&gt; 43992
+)
+</pre>                        </td>
+                    </tr>
+                                        <tr>
+                        <th>
+                            
+                            https://sub1.kevinchisholm.com/blog/images/node-js-logo.png                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>Array
+(
+    [date] =&gt; Sat, 02 Mar 2019 16:09:09 GMT
+    [server] =&gt; Apache
+    [last-modified] =&gt; Sun, 25 Jan 2015 16:01:00 GMT
+    [etag] =&gt; "15d29-50d7c20c74111"
+    [accept-ranges] =&gt; bytes
+    [content-length] =&gt; 89385
+    [cache-control] =&gt; max-age=5184000
+    [expires] =&gt; Wed, 01 May 2019 16:09:09 GMT
+    [x-ua-compatible] =&gt; IE=edge
+    [content-type] =&gt; image/png
+)
+</pre>                            <pre>Array
+(
+    [url] =&gt; https://sub1.kevinchisholm.com/blog/images/node-js-logo.png
+    [content_type] =&gt; image/png
+    [http_code] =&gt; 200
+    [header_size] =&gt; 315
+    [request_size] =&gt; 156
+    [filetime] =&gt; -1
+    [ssl_verify_result] =&gt; 0
+    [redirect_count] =&gt; 0
+    [total_time] =&gt; 0.545723
+    [namelookup_time] =&gt; 0.019217
+    [connect_time] =&gt; 0.143127
+    [pretransfer_time] =&gt; 0.410661
+    [size_upload] =&gt; 0
+    [size_download] =&gt; 16384
+    [speed_download] =&gt; 30062
+    [speed_upload] =&gt; 0
+    [download_content_length] =&gt; 89385
+    [upload_content_length] =&gt; -1
+    [starttransfer_time] =&gt; 0.545372
+    [redirect_time] =&gt; 0
+    [redirect_url] =&gt; 
+    [primary_ip] =&gt; 184.168.173.76
+    [certinfo] =&gt; Array
+        (
+        )
+
+    [primary_port] =&gt; 443
+    [local_ip] =&gt; 142.93.47.165
+    [local_port] =&gt; 44020
+)
+</pre>                        </td>
+                    </tr>
+                                        <tr>
+                        <th>
+                            
+                            https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>Array
+(
+    [date] =&gt; Sat, 02 Mar 2019 16:09:09 GMT
+    [server] =&gt; Apache
+    [last-modified] =&gt; Wed, 17 May 2017 22:27:26 GMT
+    [etag] =&gt; "20140-54fbfcafe5e72"
+    [accept-ranges] =&gt; bytes
+    [content-length] =&gt; 131392
+    [cache-control] =&gt; max-age=5184000
+    [expires] =&gt; Wed, 01 May 2019 16:09:09 GMT
+    [x-ua-compatible] =&gt; IE=edge
+    [content-type] =&gt; image/png
+)
+</pre>                            <pre>Array
+(
+    [url] =&gt; https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png
+    [content_type] =&gt; image/png
+    [http_code] =&gt; 200
+    [header_size] =&gt; 316
+    [request_size] =&gt; 175
+    [filetime] =&gt; -1
+    [ssl_verify_result] =&gt; 0
+    [redirect_count] =&gt; 0
+    [total_time] =&gt; 0.549874
+    [namelookup_time] =&gt; 0.01923
+    [connect_time] =&gt; 0.153719
+    [pretransfer_time] =&gt; 0.422414
+    [size_upload] =&gt; 0
+    [size_download] =&gt; 16384
+    [speed_download] =&gt; 29843
+    [speed_upload] =&gt; 0
+    [download_content_length] =&gt; 131392
+    [upload_content_length] =&gt; -1
+    [starttransfer_time] =&gt; 0.549658
+    [redirect_time] =&gt; 0
+    [redirect_url] =&gt; 
+    [primary_ip] =&gt; 184.168.173.76
+    [certinfo] =&gt; Array
+        (
+        )
+
+    [primary_port] =&gt; 443
+    [local_ip] =&gt; 142.93.47.165
+    [local_port] =&gt; 44022
+)
+</pre>                        </td>
+                    </tr>
+                                        <tr>
+                        <th>
+                            
+                            https://sub1.kevinchisholm.com/blog/images/github-octocat.png                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre>Array
+(
+    [date] =&gt; Sat, 02 Mar 2019 16:09:09 GMT
+    [server] =&gt; Apache
+    [last-modified] =&gt; Wed, 17 May 2017 10:25:41 GMT
+    [etag] =&gt; "8a4f-54fb5b5c7de63"
+    [accept-ranges] =&gt; bytes
+    [content-length] =&gt; 35407
+    [cache-control] =&gt; max-age=5184000
+    [expires] =&gt; Wed, 01 May 2019 16:09:09 GMT
+    [x-ua-compatible] =&gt; IE=edge
+    [content-type] =&gt; image/png
+)
+</pre>                            <pre>Array
+(
+    [url] =&gt; https://sub1.kevinchisholm.com/blog/images/github-octocat.png
+    [content_type] =&gt; image/png
+    [http_code] =&gt; 200
+    [header_size] =&gt; 314
+    [request_size] =&gt; 158
+    [filetime] =&gt; -1
+    [ssl_verify_result] =&gt; 0
+    [redirect_count] =&gt; 0
+    [total_time] =&gt; 0.569325
+    [namelookup_time] =&gt; 0.019195
+    [connect_time] =&gt; 0.165595
+    [pretransfer_time] =&gt; 0.441623
+    [size_upload] =&gt; 0
+    [size_download] =&gt; 16384
+    [speed_download] =&gt; 28794
+    [speed_upload] =&gt; 0
+    [download_content_length] =&gt; 35407
+    [upload_content_length] =&gt; -1
+    [starttransfer_time] =&gt; 0.56914
+    [redirect_time] =&gt; 0
+    [redirect_url] =&gt; 
+    [primary_ip] =&gt; 184.168.173.76
+    [certinfo] =&gt; Array
+        (
+        )
+
+    [primary_port] =&gt; 443
+    [local_ip] =&gt; 142.93.47.165
+    [local_port] =&gt; 44024
+)
+</pre>                        </td>
+                    </tr>
+                                    </tbody></table>
+
+                <h2>Content</h2>
+
+                <pre>                    &lt;!DOCTYPE html&gt;
+&lt;html lang="en-US" prefix="og: http://ogp.me/ns#"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;link rel="profile" href="http://gmpg.org/xfn/11"&gt;
+&lt;link rel="pingback" href="https://blog.kevinchisholm.com/xmlrpc.php"&gt;
+
+
+&lt;title&gt;How to scrape any web page and return the metadata as JSON | Kevin Chisholm - Blog&lt;/title&gt;
+
+&lt;!-- All in One SEO Pack 2.3.11.4 by Michael Torbert of Semper Fi Web Design[299,398] --&gt;
+&lt;meta name="description"  content="Let node.js scrape the page and get the title, description, keywords and image tags for you." /&gt;
+
+&lt;link rel="canonical" href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/" /&gt;
+&lt;!-- /all in one seo pack --&gt;
+
+&lt;!-- This site is optimized with the Yoast SEO plugin v4.0 - https://yoast.com/wordpress/plugins/seo/ --&gt;
+&lt;link rel="canonical" href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/" /&gt;
+&lt;meta property="og:locale" content="en_US" /&gt;
+&lt;meta property="og:type" content="article" /&gt;
+&lt;meta property="og:title" content="How to scrape any web page with Node and return the metadata as JSON - Kevin Chisholm - Blog" /&gt;
+&lt;meta property="og:description" content="Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app&amp;#8217;s tab and the &amp;hellip;" /&gt;
+&lt;meta property="og:url" content="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/" /&gt;
+&lt;meta property="og:site_name" content="Kevin Chisholm - Blog" /&gt;
+&lt;meta property="article:tag" content="JavaScript" /&gt;
+&lt;meta property="article:tag" content="json" /&gt;
+&lt;meta property="article:tag" content="metadata" /&gt;
+&lt;meta property="article:tag" content="node" /&gt;
+&lt;meta property="article:tag" content="scrape" /&gt;
+&lt;meta property="article:section" content="Node.js" /&gt;
+&lt;meta property="article:published_time" content="2017-05-18T00:30:47-05:00" /&gt;
+&lt;meta property="article:modified_time" content="2018-02-13T18:09:11-05:00" /&gt;
+&lt;meta property="og:updated_time" content="2018-02-13T18:09:11-05:00" /&gt;
+&lt;meta property="og:image" content="https://sub1.kevinchisholm.com/blog/images/node-js-logo.png" /&gt;
+&lt;meta property="og:image" content="https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png" /&gt;
+&lt;meta property="og:image" content="https://sub1.kevinchisholm.com/blog/images/github-octocat.png" /&gt;
+&lt;meta name="twitter:card" content="summary" /&gt;
+&lt;meta name="twitter:description" content="Let Node.js scrape the page and get the title, description, keywords and image tags for you I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app&amp;#8217;s tab and the [&amp;hellip;]" /&gt;
+&lt;meta name="twitter:title" content="How to scrape any web page with Node and return the metadata as JSON - Kevin Chisholm - Blog" /&gt;
+&lt;meta name="twitter:image" content="https://sub1.kevinchisholm.com/blog/images/node-js-logo.png" /&gt;
+&lt;!-- / Yoast SEO plugin. --&gt;
+
+&lt;link rel='dns-prefetch' href='//ajax.googleapis.com' /&gt;
+&lt;link rel='dns-prefetch' href='//fonts.googleapis.com' /&gt;
+&lt;link rel='dns-prefetch' href='//s.w.org' /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Kevin Chisholm - Blog &amp;raquo; Feed" href="https://blog.kevinchisholm.com/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Kevin Chisholm - Blog &amp;raquo; Comments Feed" href="https://blog.kevinchisholm.com/comments/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="Kevin Chisholm - Blog &amp;raquo; How to scrape any web page with Node and return the metadata as JSON Comments Feed" href="https://blog.kevinchisholm.com/javascript/node-js/scrape-web-page-return-metadata-json/feed/" /&gt;
+		&lt;script type="text/javascript"&gt;
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.kevinchisholm.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&amp;&amp;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&amp;&amp;k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i&lt;j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[j[i]],"flag"!==j[i]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;&amp;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&amp;&amp;g.twemoji&amp;&amp;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;
+		&lt;style type="text/css"&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+&lt;link rel='stylesheet' id='crayon-css'  href='https://blog.kevinchisholm.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='crayon-theme-classic-css'  href='https://blog.kevinchisholm.com/wp-content/plugins/crayon-syntax-highlighter/themes/classic/classic.css?ver=_2.7.2_beta' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='crayon-font-monaco-css'  href='https://blog.kevinchisholm.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=_2.7.2_beta' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='jquery-ui-style-css'  href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-darkness/jquery-ui.css?ver=4.9.9' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='jquery-bxslider-css'  href='https://blog.kevinchisholm.com/wp-content/themes/hashone/css/jquery.bxslider.css?ver=4.1.2' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='animate-css'  href='https://blog.kevinchisholm.com/wp-content/themes/hashone/css/animate.css?ver=1.0' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='font-awesome-css'  href='https://blog.kevinchisholm.com/wp-content/themes/hashone/css/font-awesome.css?ver=4.4.0' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='owl-carousel-css'  href='https://blog.kevinchisholm.com/wp-content/themes/hashone/css/owl.carousel.css?ver=1.3.3' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='owl-theme-css'  href='https://blog.kevinchisholm.com/wp-content/themes/hashone/css/owl.theme.css?ver=1.3.3' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='nivo-lightbox-css'  href='https://blog.kevinchisholm.com/wp-content/themes/hashone/css/nivo-lightbox.css?ver=1.3.3' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='hashone-style-css'  href='https://blog.kevinchisholm.com/wp-content/themes/hashone/style.css?ver=1.0' type='text/css' media='all' /&gt;
+&lt;link rel='stylesheet' id='hashone-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;#038;subset=latin,latin-ext' type='text/css' media='all' /&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+/* &lt;![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/blog.kevinchisholm.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+/* &lt;![CDATA[ */
+var s2_script_strings = {"ajaxurl":"https:\/\/blog.kevinchisholm.com\/wp-admin\/admin-ajax.php","title":"Subscribe to this blog"};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/plugins/subscribe2/include/s2_ajax.min.js?ver=1.0'&gt;&lt;/script&gt;
+&lt;link rel='https://api.w.org/' href='https://blog.kevinchisholm.com/wp-json/' /&gt;
+&lt;link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kevinchisholm.com/xmlrpc.php?rsd" /&gt;
+&lt;link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kevinchisholm.com/wp-includes/wlwmanifest.xml" /&gt; 
+&lt;meta name="generator" content="WordPress 4.9.9" /&gt;
+&lt;link rel='shortlink' href='https://blog.kevinchisholm.com/?p=5273' /&gt;
+&lt;link rel="alternate" type="application/json+oembed" href="https://blog.kevinchisholm.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kevinchisholm.com%2Fjavascript%2Fnode-js%2Fscrape-web-page-return-metadata-json%2F" /&gt;
+&lt;link rel="alternate" type="text/xml+oembed" href="https://blog.kevinchisholm.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kevinchisholm.com%2Fjavascript%2Fnode-js%2Fscrape-web-page-return-metadata-json%2F&amp;#038;format=xml" /&gt;
+	
+&lt;!-- START: Syntax Highlighter ComPress --&gt;
+&lt;script type="text/javascript" src="https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shCore.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shAutoloader.js"&gt;&lt;/script&gt;
+&lt;link type="text/css" rel="stylesheet" href="https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/styles/shCoreDefault.css"/&gt;
+&lt;!-- END: Syntax Highlighter ComPress --&gt;
+
+  &lt;style&gt;.hs-main-header,#hs-home-slider-section{background-image: url(https://blog.kevinchisholm.com/wp-content/themes/hashone/images/bg.jpg)}.hs-service-left-bg{ background-image:url(https://blog.kevinchisholm.com/wp-content/themes/hashone/images/bg.jpg);}#hs-counter-section{ background-image:url(https://blog.kevinchisholm.com/wp-content/themes/hashone/images/bg.jpg);}#hs-contact-section{ background-image:url(https://blog.kevinchisholm.com/wp-content/themes/hashone/images/bg.jpg);}&lt;/style&gt;
+&lt;link rel="stylesheet" href="https://blog.kevinchisholm.com/static/css/font-awesome.min.css" type="text/css" media="all"&gt;
+
+&lt;!-- START KEVIN CSS OVERRIDES --&gt;
+&lt;script&gt;
+(function () {
+    var uniqueNum = new Date().getTime();
+    var cssURL = 'https://sub1.kevinchisholm.com/blog/css/overrides.css?ver=' + uniqueNum;
+    var cssElement=document.createElement('link')
+    cssElement.setAttribute('id','css-overrides')
+    cssElement.setAttribute('rel','stylesheet')
+    cssElement.setAttribute('type','text/css')
+    cssElement.setAttribute('href', cssURL);
+    document.getElementsByTagName("head")[0].appendChild(cssElement);
+})();
+&lt;/script&gt;
+&lt;!-- END KEVIN CSS OVERRIDES --&gt;
+&lt;/head&gt;
+
+&lt;body class="post-template-default single single-post postid-5273 single-format-standard group-blog hs_right_sidebar"&gt;
+
+&lt;!-- START GOOGLE ANALYTICS --&gt;
+&lt;script async src="https://www.googletagmanager.com/gtag/js?id=UA-109667531-1"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-109667531-1');
+&lt;/script&gt;
+&lt;!-- END GOOGLE ANALYTICS --&gt;
+
+&lt;div id="hs-page"&gt;
+		&lt;header id="hs-masthead" class="hs-site-header hs-clearfix hs-black"&gt;
+		&lt;div class="hs-container"&gt;
+			&lt;div id="hs-site-branding"&gt;
+									&lt;p class="hs-site-title"&gt;&lt;a href="https://blog.kevinchisholm.com/" rel="home"&gt;Kevin Chisholm &amp;#8211; Blog&lt;/a&gt;&lt;/p&gt;
+										
+					&lt;p class="hs-site-description"&gt;Web Development Articles and Tutorials&lt;/p&gt;
+					
+							&lt;/div&gt;&lt;!-- .site-branding --&gt;
+
+			&lt;nav id="hs-site-navigation" class="hs-main-navigation"&gt;
+				&lt;div class="hs-toggle-menu"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;div class="hs-menu hs-clearfix"&gt;&lt;ul&gt;
+&lt;li class="page_item page-item-2327"&gt;&lt;a href="https://blog.kevinchisholm.com/about/"&gt;About Kevin Chisholm&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page_item page-item-2333"&gt;&lt;a href="https://blog.kevinchisholm.com/"&gt;Most Popular Articles&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page_item page-item-2322"&gt;&lt;a href="https://blog.kevinchisholm.com/contact/"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+			&lt;/nav&gt;&lt;!-- #hs-site-navigation --&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;&lt;!-- #hs-masthead --&gt;
+
+	&lt;div id="hs-content" class="hs-site-content hs-clearfix"&gt;
+&lt;header class="hs-main-header"&gt;
+	&lt;div class="hs-container"&gt;
+		&lt;h1 class="hs-main-title"&gt;How to scrape any web page with Node and return the metadata as JSON&lt;/h1&gt;		&lt;div class="hs-breadcrumbs"&gt;&lt;span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"&gt;&lt;a href="https://blog.kevinchisholm.com/" itemprop="url"&gt;&lt;span itemprop="title"&gt;Home&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; &lt;span class="sep"&gt;&amp;rsaquo;&lt;/span&gt; &lt;span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"&gt;&lt;a href="https://blog.kevinchisholm.com/category/javascript/" itemprop="url"&gt;&lt;span itemprop="title"&gt;JavaScript&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; &lt;span class="sep"&gt;&amp;rsaquo;&lt;/span&gt; &lt;span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"&gt;&lt;a href="https://blog.kevinchisholm.com/category/javascript/node-js/" itemprop="url"&gt;&lt;span itemprop="title"&gt;Node.js&lt;/span&gt;&lt;/a&gt;&lt;/span&gt; &lt;span class="sep"&gt;&amp;rsaquo;&lt;/span&gt; &lt;span class="current"&gt;How to scrape any web page with Node and return the metadata as JSON&lt;/span&gt;&lt;/div&gt;&lt;!-- .hs-breadcrumbs --&gt;	&lt;/div&gt;
+&lt;/header&gt;&lt;!-- .entry-header --&gt;
+
+&lt;div class="hs-container"&gt;
+	&lt;div id="primary" class="content-area"&gt;
+		&lt;main id="main" class="site-main" role="main"&gt;
+
+		
+			
+&lt;article id="post-5273" class="post-5273 post type-post status-publish format-standard hentry category-node-js tag-javascript tag-json tag-metadata tag-node tag-scrape"&gt;
+
+	&lt;div class="entry-content"&gt;
+		&lt;p&gt;&lt;img class="alignleft " src="https://sub1.kevinchisholm.com/blog/images/node-js-logo.png" alt="CSS position relative" width="196" height="112" /&gt;&lt;/p&gt;
+&lt;h2&gt;Let Node.js scrape the page and get the title, description, keywords and image tags for you&lt;/h2&gt;
+&lt;p&gt;I recently built a web-based bookmarking application for myself using React. I was happy with the results and use the app every day. However, I found myself having to go back and forth between the app&amp;#8217;s tab and the tab of the page I am bookmarking. First the URL, then the title, then grab an image from the page, and then manually enter keywords that make sense to me. Too much work. So I started to think that this was a perfect opportunity for some web page scraping.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On a high-level the game plan was:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The user makes a &lt;strong&gt;POST&lt;/strong&gt; request to the route:&nbsp;&lt;strong&gt;/scrape&lt;/strong&gt;, passing a &lt;strong&gt;URL&lt;/strong&gt; in the request body&lt;/li&gt;
+&lt;li&gt;Secondly, we make a 2nd &lt;strong&gt;HTTP&lt;/strong&gt; request behind the scenes, to the URL provided by the user&lt;/li&gt;
+&lt;li&gt;Next, we take the response of that &nbsp;2nd &lt;strong&gt;HTTP&lt;/strong&gt; request and parse it out&lt;/li&gt;
+&lt;li&gt;Finally, we take various values scraped from the HTML and return it to the user as a &lt;strong&gt;JSON&lt;/strong&gt; response&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Example Web Page&lt;/h2&gt;
+&lt;p&gt;So, for demonstration purposes, I decided to create a simple web page that makes it easy to construct the initial HTTP POST request. Consequently, if you clone the Github repo below and follow the instructions, you can run the web page locally, enter a URL and then see the metadata scraped from the 2nd &lt;strong&gt;HTTP&lt;/strong&gt; request presented in the web page.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png"&gt;&lt;img class="aligncenter size-medium" style="padding: 5px;background-color: #ededed" src="https://sub1.kevinchisholm.com/blog/images/node-cheerio-web-scrape-example.png" width="500" height="572" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: center"&gt;&lt;strong&gt;Image # 1 &amp;#8211; The web-scraping application&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you look at the screen-shot above, you&amp;#8217;ll see the web-scraping application that is available via the Github repo. In this screen-shot, I have entered the URL: &lt;strong&gt;http://kevinchisholm.com&lt;/strong&gt;, and then clicked the button: &amp;#8220;&lt;strong&gt;Scrape Page&lt;/strong&gt;&amp;#8220;. The result is that the &lt;strong&gt;title&lt;/strong&gt;, &lt;strong&gt;description&lt;/strong&gt;, &lt;strong&gt;keywords&lt;/strong&gt; and a list of images appear in JSON format in the box below. All code examples below are taken from this application so you can see how the code works when you run it locally.&lt;/p&gt;
+&lt;table style="background: none;border: none"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 30%;border: none;padding: 10px;vertical-align: top"&gt;&lt;a href="https://github.com/kevinchisholm/node-cheerio-web-page-scraper"&gt;&lt;img class="alignnone" src="https://sub1.kevinchisholm.com/blog/images/github-octocat.png" alt="github octocat logo" width="100" height="83" /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style="border: none;padding: 10px;vertical-align: top"&gt;&lt;span style="color: #ff0000"&gt;&lt;strong&gt;Clone the example code here:&nbsp;&lt;a style="color: #ff0000" href="https://github.com/kevinchisholm/node-cheerio-web-page-scraper" target="_blank" rel="noopener noreferrer"&gt;https://github.com/kevinchisholm/node-cheerio-web-page-scraper&lt;/a&gt; &lt;/strong&gt;&lt;span style="color: #000000"&gt;&lt;em&gt;(directions ca be found on the repo page)&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Example # 1 &amp;#8211;&nbsp;SETTING UP THE ROUTE HANDLER&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;&lt;!-- Crayon Syntax Highlighter v_2.7.2_beta --&gt;
+
+		&lt;div id="crayon-5c7aaaa31fe19741678901" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"&gt;
+		
+			&lt;div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"&gt;&lt;span class="crayon-title"&gt;&lt;/span&gt;
+			&lt;div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"&gt;&lt;div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-plain-button" title="Toggle Plain Code"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-expand-button" title="Expand Code"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-copy-button" title="Copy"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-popup-button" title="Open Code In New Window"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class="crayon-language"&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+			&lt;div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"&gt;&lt;/div&gt;
+			&lt;div class="crayon-plain-wrap"&gt;&lt;textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;"&gt;
+app.post('/scrape', function(req, res){
+    res.setHeader('Content-Type', 'application/json');
+
+    //make a new request to the URL provided in the HTTP POST request
+    request(req.body.url, function (error, response, responseHtml) {
+        var resObj = {};
+
+        //if there was an error
+        if (error) {
+            res.end(JSON.stringify({error: 'There was an error of some kind'}));
+            return;
+        }
+
+        //much of the work we do will go here....
+        
+    }) ;
+});&lt;/textarea&gt;&lt;/div&gt;
+			&lt;div class="crayon-main" style=""&gt;
+				&lt;table class="crayon-table"&gt;
+					&lt;tr class="crayon-row"&gt;
+				&lt;td class="crayon-nums " data-settings="show"&gt;
+					&lt;div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-1"&gt;1&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe19741678901-2"&gt;2&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-3"&gt;3&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe19741678901-4"&gt;4&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-5"&gt;5&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe19741678901-6"&gt;6&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-7"&gt;7&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe19741678901-8"&gt;8&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-9"&gt;9&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe19741678901-10"&gt;10&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-11"&gt;11&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe19741678901-12"&gt;12&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-13"&gt;13&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe19741678901-14"&gt;14&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-15"&gt;15&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe19741678901-16"&gt;16&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe19741678901-17"&gt;17&lt;/div&gt;&lt;/div&gt;
+				&lt;/td&gt;
+						&lt;td class="crayon-code"&gt;&lt;div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-1"&gt;&lt;span class="crayon-v"&gt;app&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;post&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'/scrape'&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-t"&gt;function&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-v"&gt;req&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-v"&gt;res&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe19741678901-2"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;res&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;setHeader&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'Content-Type'&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-s"&gt;'application/json'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-3"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe19741678901-4"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-c"&gt;//make a new request to the URL provided in the HTTP POST request&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-5"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-e"&gt;request&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-v"&gt;req&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;body&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;url&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-t"&gt;function&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-v"&gt;error&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-v"&gt;response&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-v"&gt;responseHtml&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe19741678901-6"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-t"&gt;var&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-7"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe19741678901-8"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-c"&gt;//if there was an error&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-9"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;if&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-v"&gt;error&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe19741678901-10"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;res&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-st"&gt;end&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-v"&gt;JSON&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;stringify&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;span class="crayon-v"&gt;error&lt;/span&gt;&lt;span class="crayon-o"&gt;:&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-s"&gt;'There was an error of some kind'&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-11"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;return&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe19741678901-12"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-13"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe19741678901-14"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-c"&gt;//much of the work we do will go here....&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-15"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe19741678901-16"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe19741678901-17"&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+&lt;!-- [Format Time: 0.0053 seconds] --&gt;
+&lt;p&gt;In Example # 1, I set up a route handler for the &lt;strong&gt;/scrape&lt;/strong&gt; route. So when the user makes an HTTP &lt;strong&gt;POST r&lt;/strong&gt;equest to&nbsp;&lt;strong&gt;/scrape&lt;/strong&gt;, the anonymous &nbsp;function is executed.&lt;/p&gt;
+&lt;p&gt;Inside the route handler, we use the request object to make another HTTP request. &nbsp;The URL of the request is provided via the user&amp;#8217;s&nbsp;HTTP &lt;strong&gt;POST r&lt;/strong&gt;equest. In other words, we look at the &lt;strong&gt;req&lt;/strong&gt; argument that is passed to the route handler, which is the request object, and grab the &lt;strong&gt;body.url&lt;/strong&gt; property. Next, an anonymous function is passed. In similar fashion, that function takes an &lt;strong&gt;error&lt;/strong&gt; object, a &lt;strong&gt;response&lt;/strong&gt; object, and a&nbsp;&lt;strong&gt;responseHtml&lt;/strong&gt; object as its arguments. We then do a quick test to see if there is an&nbsp;&lt;strong&gt;error&lt;/strong&gt; object, and if so, we therefore exit (just to keep things simple). I&amp;#8217;ve chopped out the rest of the implementation code so that it is easier to understand how we got this far.&lt;/p&gt;
+&lt;h2&gt;Example # 2 &amp;#8211;&nbsp;INSIDE THE 2ND HTTP REQUEST&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;&lt;!-- Crayon Syntax Highlighter v_2.7.2_beta --&gt;
+
+		&lt;div id="crayon-5c7aaaa31fe33444182961" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;"&gt;
+		
+			&lt;div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"&gt;&lt;span class="crayon-title"&gt;&lt;/span&gt;
+			&lt;div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"&gt;&lt;div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-plain-button" title="Toggle Plain Code"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-expand-button" title="Expand Code"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-copy-button" title="Copy"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="crayon-button crayon-popup-button" title="Open Code In New Window"&gt;&lt;div class="crayon-button-icon"&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class="crayon-language"&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+			&lt;div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"&gt;&lt;/div&gt;
+			&lt;div class="crayon-plain-wrap"&gt;&lt;textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;"&gt;
+        //create the cheerio object
+        resObj = {},
+            //set a reference to the document that came back
+            $ = cheerio.load(responseHtml),
+            //create a reference to the meta elements
+            $title = $('head title').text(),
+            $desc = $('meta[name="description"]').attr('content'),
+            $kwd = $('meta[name="keywords"]').attr('content'),
+            $ogTitle = $('meta[property="og:title"]').attr('content'),
+            $ogImage = $('meta[property="og:image"]').attr('content'),
+            $ogkeywords = $('meta[property="og:keywords"]').attr('content'),
+            $images = $('img');
+
+        if ($title) {
+            resObj.title = $title;
+        }
+
+        if ($desc) {
+            resObj.description = $desc;
+        }
+
+        if ($kwd) {
+            resObj.keywords = $kwd;
+        }
+
+        if ($ogImage &amp;amp;&amp;amp; $ogImage.length){
+            resObj.ogImage = $ogImage;
+        }
+
+        if ($ogTitle &amp;amp;&amp;amp; $ogTitle.length){
+            resObj.ogTitle = $ogTitle;
+        }
+
+        if ($ogkeywords &amp;amp;&amp;amp; $ogkeywords.length){
+            resObj.ogkeywords = $ogkeywords;
+        }
+
+        if ($images &amp;amp;&amp;amp; $images.length){
+            resObj.images = [];
+
+            for (var i = 0; i &amp;lt; $images.length; i++) {
+                resObj.images.push($($images[i]).attr('src'));
+            }
+        }
+
+        //send the response
+        res.end(JSON.stringify(resObj));&lt;/textarea&gt;&lt;/div&gt;
+			&lt;div class="crayon-main" style=""&gt;
+				&lt;table class="crayon-table"&gt;
+					&lt;tr class="crayon-row"&gt;
+				&lt;td class="crayon-nums " data-settings="show"&gt;
+					&lt;div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-1"&gt;1&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-2"&gt;2&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-3"&gt;3&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-4"&gt;4&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-5"&gt;5&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-6"&gt;6&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-7"&gt;7&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-8"&gt;8&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-9"&gt;9&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-10"&gt;10&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-11"&gt;11&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-12"&gt;12&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-13"&gt;13&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-14"&gt;14&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-15"&gt;15&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-16"&gt;16&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-17"&gt;17&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-18"&gt;18&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-19"&gt;19&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-20"&gt;20&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-21"&gt;21&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-22"&gt;22&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-23"&gt;23&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-24"&gt;24&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-25"&gt;25&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-26"&gt;26&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-27"&gt;27&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-28"&gt;28&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-29"&gt;29&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-30"&gt;30&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-31"&gt;31&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-32"&gt;32&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-33"&gt;33&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-34"&gt;34&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-35"&gt;35&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-36"&gt;36&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-37"&gt;37&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-38"&gt;38&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-39"&gt;39&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-40"&gt;40&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-41"&gt;41&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-42"&gt;42&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-43"&gt;43&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-44"&gt;44&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-45"&gt;45&lt;/div&gt;&lt;div class="crayon-num crayon-striped-num" data-line="crayon-5c7aaaa31fe33444182961-46"&gt;46&lt;/div&gt;&lt;div class="crayon-num" data-line="crayon-5c7aaaa31fe33444182961-47"&gt;47&lt;/div&gt;&lt;/div&gt;
+				&lt;/td&gt;
+						&lt;td class="crayon-code"&gt;&lt;div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-1"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-c"&gt;//create the cheerio object&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-2"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-3"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-c"&gt;//set a reference to the document that came back&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-4"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-v"&gt;cheerio&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;load&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-v"&gt;responseHtml&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-5"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-c"&gt;//create a reference to the meta elements&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-6"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;title&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'head title'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;text&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-7"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;desc&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'meta[name="description"]'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;attr&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'content'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-8"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;kwd&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'meta[name="keywords"]'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;attr&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'content'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-9"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogTitle&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'meta[property="og:title"]'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;attr&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'content'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-10"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogImage&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'meta[property="og:image"]'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;attr&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'content'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-11"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogkeywords&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'meta[property="og:keywords"]'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;attr&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'content'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-12"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;images&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'img'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-13"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-14"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;if&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;title&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-15"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;title&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;title&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-16"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-17"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-18"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;if&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;desc&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-19"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;description&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;desc&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-20"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-21"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-22"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;if&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;kwd&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-23"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;keywords&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;kwd&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-24"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-25"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-26"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;if&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogImage&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogImage&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;length&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-27"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;ogImage&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogImage&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-28"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-29"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-30"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;if&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogTitle&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogTitle&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;length&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-31"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;ogTitle&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogTitle&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-32"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-33"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-34"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;if&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogkeywords&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogkeywords&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;length&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-35"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;ogkeywords&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;ogkeywords&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-36"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-37"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-38"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;if&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;images&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;images&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;length&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-39"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;images&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;[&lt;/span&gt;&lt;span class="crayon-sy"&gt;]&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-40"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-41"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-st"&gt;for&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-t"&gt;var&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-v"&gt;i&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;=&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-cn"&gt;0&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-v"&gt;i&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;images&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;length&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-v"&gt;i&lt;/span&gt;&lt;span class="crayon-o"&gt;++&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-h"&gt; &lt;/span&gt;&lt;span class="crayon-sy"&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-42"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-v"&gt;images&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;push&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-sy"&gt;$&lt;/span&gt;&lt;span class="crayon-v"&gt;images&lt;/span&gt;&lt;span class="crayon-sy"&gt;[&lt;/span&gt;&lt;span class="crayon-v"&gt;i&lt;/span&gt;&lt;span class="crayon-sy"&gt;]&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;attr&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-s"&gt;'src'&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-43"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-44"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-sy"&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-45"&gt;&amp;nbsp;&lt;/div&gt;&lt;div class="crayon-line crayon-striped-line" id="crayon-5c7aaaa31fe33444182961-46"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-c"&gt;//send the response&lt;/span&gt;&lt;/div&gt;&lt;div class="crayon-line" id="crayon-5c7aaaa31fe33444182961-47"&gt;&lt;span class="crayon-h"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span class="crayon-v"&gt;res&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-st"&gt;end&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-v"&gt;JSON&lt;/span&gt;&lt;span class="crayon-sy"&gt;.&lt;/span&gt;&lt;span class="crayon-e"&gt;stringify&lt;/span&gt;&lt;span class="crayon-sy"&gt;(&lt;/span&gt;&lt;span class="crayon-v"&gt;resObj&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;)&lt;/span&gt;&lt;span class="crayon-sy"&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/table&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+&lt;!-- [Format Time: 0.0159 seconds] --&gt;
+&lt;p&gt;In Example # 2,&nbsp;we have the rest of the code that goes in the handler for the behind-the-scenes request. First of all, the&nbsp;&lt;strong&gt;resObj&lt;/strong&gt; variable represents the object that will be returned to the user as JSON. Furthermore, the &lt;strong&gt;$&lt;/strong&gt; variable is an important one. It represents a jQuery-like function that allows us to query the DOM of the HTML returned by the 2nd HTML request.&lt;/p&gt;
+&lt;h2&gt;Creating the metadata for the JSON response&lt;/h2&gt;
+&lt;p&gt;Following the&nbsp;&lt;strong&gt;$&lt;/strong&gt; variable, we create the variables:&nbsp;&lt;strong&gt;$title&lt;/strong&gt;, &lt;strong&gt;$desc&lt;/strong&gt;, &lt;strong&gt;$kwd&lt;/strong&gt;, &lt;strong&gt;$ogTitle&lt;/strong&gt;, &lt;strong&gt;$ogImage&lt;/strong&gt;, &lt;strong&gt;&nbsp;$ogkeywords&lt;/strong&gt; and &lt;strong&gt;$images&lt;/strong&gt;. The first six variables represent meta data scraped from the &lt;strong&gt;HEAD&lt;/strong&gt; section of the HTML. On the other hand, the&nbsp;&lt;strong&gt;$images&nbsp;&lt;/strong&gt;variable differs a bit in that the values in that HTML collection are scraped from the &lt;strong&gt;BODY&lt;/strong&gt; tag of the page.&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #ff0000"&gt;&lt;strong&gt;View the full code for app.js here:&nbsp;&lt;a style="color: #ff0000" href="https://github.com/kevinchisholm/node-cheerio-web-page-scraper/blob/master/app.js" target="_blank" rel="noopener noreferrer"&gt;github.com/kevinchisholm/node-cheerio-web-page-scraper/blob/master/app.js&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Over the course of the next few dozen lines of code, we just check to see if each variable has a value. If it does, we therefore add it to the&nbsp;&lt;strong&gt;resObj&lt;/strong&gt;&nbsp;object. In other words, we want to avoid any errors as we construct our JSON response. Similarly, for the&nbsp;&lt;strong&gt;$images&nbsp;&lt;/strong&gt;variable, we first make sure that the collection has length. Secondly, we use a for-loop to gather up all of the image href values and add them to the images property of the&nbsp;&lt;strong&gt;resObj&lt;/strong&gt;&nbsp;object, which is an array.&lt;/p&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;For this article, I&nbsp; focused on how the &lt;strong&gt;/scrape&lt;/strong&gt; route handler is set up to handle an HTTP &lt;strong&gt;POST&lt;/strong&gt; request and then how the 2nd HTTP request is made and subsequently handled.&lt;/p&gt;
+&lt;p&gt;To be sure, there is a fair amount of code that I left out for the sake of brevity. Mainly, I did not discuss &lt;strong&gt;package.json&lt;/strong&gt;, the variable declarations at the top of &lt;strong&gt;app.js,&lt;/strong&gt; or the contents of the&nbsp;&lt;strong&gt;www&lt;/strong&gt; folder because that might have made the article quite long. If you clone this repo, follow the instructions and then run the app, it should be very easy to follow the code and understand what is happening .&lt;/p&gt;
+			&lt;/div&gt;&lt;!-- .entry-content --&gt;
+
+&lt;/article&gt;&lt;!-- #post-## --&gt;
+
+
+			
+		
+		&lt;/main&gt;&lt;!-- #main --&gt;
+	&lt;/div&gt;&lt;!-- #primary --&gt;
+
+	&lt;div id="secondary" class="widget-area"&gt;
+		&lt;aside id="search-2" class="widget widget_search"&gt;&lt;h4 class="widget-title"&gt;Search This Blog&lt;/h4&gt;&lt;form role="search" method="get" class="search-form" action="https://blog.kevinchisholm.com/"&gt;
+				&lt;label&gt;
+					&lt;span class="screen-reader-text"&gt;Search for:&lt;/span&gt;
+					&lt;input type="search" class="search-field" placeholder="Search &amp;hellip;" value="" name="s" /&gt;
+				&lt;/label&gt;
+				&lt;input type="submit" class="search-submit" value="Search" /&gt;
+			&lt;/form&gt;&lt;/aside&gt;&lt;aside id="s2_form_widget-2" class="widget s2_form_widget"&gt;&lt;h4 class="widget-title"&gt;Subscribe to this blog&lt;/h4&gt;&lt;div class="search"&gt;Receive email notifications about new posts.&lt;form method="post" action="https://blog.kevinchisholm.com/contact/"&gt;&lt;input type="hidden" name="ip" value="142.93.47.165" /&gt;&lt;span style="display:none !important"&gt;&lt;label for="name"&gt;Leave Blank:&lt;/label&gt;&lt;input type="text" id="name" name="name" /&gt;&lt;label for="uri"&gt;Do Not Change:&lt;/label&gt;&lt;input type="text" id="uri" name="uri" value="http://" /&gt;&lt;/span&gt;&lt;p&gt;&lt;label for="s2email"&gt;Your email:&lt;/label&gt;&lt;br /&gt;&lt;input type="text" name="email" id="s2email" value="Enter email address..." size="20" onfocus="if (this.value == 'Enter email address...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter email address...';}" /&gt;&lt;/p&gt;&lt;p&gt;&lt;input type="submit" name="subscribe" value="Subscribe" /&gt;&amp;nbsp;&lt;input type="submit" name="unsubscribe" value="Unsubscribe" /&gt;&lt;/p&gt;&lt;/form&gt;
+&lt;/div&gt;&lt;/aside&gt;&lt;aside id="tag_cloud-7" class="widget widget_tag_cloud"&gt;&lt;h4 class="widget-title"&gt;Categories&lt;/h4&gt;&lt;div class="tagcloud"&gt;&lt;a href="https://blog.kevinchisholm.com/category/ajax-javascript/" class="tag-cloud-link tag-link-108 tag-link-position-1" style="font-size: 9.6050955414013pt;" aria-label="AJAX (2 items)"&gt;AJAX&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/amazon-web-services/" class="tag-cloud-link tag-link-435 tag-link-position-2" style="font-size: 8pt;" aria-label="Amazon Web Services (AWS) (1 item)"&gt;Amazon Web Services (AWS)&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/angular/" class="tag-cloud-link tag-link-264 tag-link-position-3" style="font-size: 18.522292993631pt;" aria-label="Angular (29 items)"&gt;Angular&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/angular2/" class="tag-cloud-link tag-link-371 tag-link-position-4" style="font-size: 8pt;" aria-label="Angular 2 (1 item)"&gt;Angular 2&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/angular/angular-services/" class="tag-cloud-link tag-link-358 tag-link-position-5" style="font-size: 8pt;" aria-label="Angular Services (1 item)"&gt;Angular Services&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/array-prototype/" class="tag-cloud-link tag-link-408 tag-link-position-6" style="font-size: 13.796178343949pt;" aria-label="Array.prototype (8 items)"&gt;Array.prototype&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/arrays-javascript/" class="tag-cloud-link tag-link-112 tag-link-position-7" style="font-size: 8pt;" aria-label="Arrays (1 item)"&gt;Arrays&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/asynchronous-javascript/" class="tag-cloud-link tag-link-170 tag-link-position-8" style="font-size: 9.6050955414013pt;" aria-label="Asynchronous (2 items)"&gt;Asynchronous&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/asynchronous-module-definition/" class="tag-cloud-link tag-link-116 tag-link-position-9" style="font-size: 11.566878980892pt;" aria-label="Asynchronous Module Definition (4 items)"&gt;Asynchronous Module Definition&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/backbone/" class="tag-cloud-link tag-link-293 tag-link-position-10" style="font-size: 14.242038216561pt;" aria-label="Backbone (9 items)"&gt;Backbone&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/css/combinators/" class="tag-cloud-link tag-link-414 tag-link-position-11" style="font-size: 8pt;" aria-label="Combinators (1 item)"&gt;Combinators&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/css/" class="tag-cloud-link tag-link-80 tag-link-position-12" style="font-size: 12.904458598726pt;" aria-label="CSS (6 items)"&gt;CSS&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/css3/" class="tag-cloud-link tag-link-120 tag-link-position-13" style="font-size: 11.566878980892pt;" aria-label="CSS3 (4 items)"&gt;CSS3&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/node-js/express-js/" class="tag-cloud-link tag-link-430 tag-link-position-14" style="font-size: 10.675159235669pt;" aria-label="Express JS (3 items)"&gt;Express JS&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/functions-javascript/" class="tag-cloud-link tag-link-110 tag-link-position-15" style="font-size: 9.6050955414013pt;" aria-label="Functions (2 items)"&gt;Functions&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/gulp-js/" class="tag-cloud-link tag-link-356 tag-link-position-16" style="font-size: 9.6050955414013pt;" aria-label="Gulp.js (2 items)"&gt;Gulp.js&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/html5-javascript/" class="tag-cloud-link tag-link-217 tag-link-position-17" style="font-size: 15.222929936306pt;" aria-label="HTML5 (12 items)"&gt;HTML5&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/internet/" class="tag-cloud-link tag-link-131 tag-link-position-18" style="font-size: 8pt;" aria-label="Internet (1 item)"&gt;Internet&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/jasmine/" class="tag-cloud-link tag-link-403 tag-link-position-19" style="font-size: 10.675159235669pt;" aria-label="Jasmine (3 items)"&gt;Jasmine&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/java/" class="tag-cloud-link tag-link-391 tag-link-position-20" style="font-size: 8pt;" aria-label="Java (1 item)"&gt;Java&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/" class="tag-cloud-link tag-link-3 tag-link-position-21" style="font-size: 22pt;" aria-label="JavaScript (73 items)"&gt;JavaScript&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript-templating/" class="tag-cloud-link tag-link-95 tag-link-position-22" style="font-size: 10.675159235669pt;" aria-label="JavaScript-Templating (3 items)"&gt;JavaScript-Templating&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/javascript-tools/" class="tag-cloud-link tag-link-313 tag-link-position-23" style="font-size: 8pt;" aria-label="JavaScript Tools (1 item)"&gt;JavaScript Tools&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/java-spring-boot/" class="tag-cloud-link tag-link-400 tag-link-position-24" style="font-size: 8pt;" aria-label="Java Spring Boot (1 item)"&gt;Java Spring Boot&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/jquery/" class="tag-cloud-link tag-link-20 tag-link-position-25" style="font-size: 17.898089171975pt;" aria-label="jQuery (25 items)"&gt;jQuery&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/json-javascript/" class="tag-cloud-link tag-link-151 tag-link-position-26" style="font-size: 11.566878980892pt;" aria-label="JSON (4 items)"&gt;JSON&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/less-css/" class="tag-cloud-link tag-link-113 tag-link-position-27" style="font-size: 8pt;" aria-label="Less CSS (1 item)"&gt;Less CSS&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/mapbox/" class="tag-cloud-link tag-link-441 tag-link-position-28" style="font-size: 8pt;" aria-label="Mapbox (1 item)"&gt;Mapbox&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/mobile/" class="tag-cloud-link tag-link-91 tag-link-position-29" style="font-size: 8pt;" aria-label="Mobile (1 item)"&gt;Mobile&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/mongodb/" class="tag-cloud-link tag-link-352 tag-link-position-30" style="font-size: 11.566878980892pt;" aria-label="MongoDB (4 items)"&gt;MongoDB&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/node-js/" class="tag-cloud-link tag-link-137 tag-link-position-31" style="font-size: 18.343949044586pt;" aria-label="Node.js (28 items)"&gt;Node.js&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/node-js/nodejs-templating/" class="tag-cloud-link tag-link-429 tag-link-position-32" style="font-size: 8pt;" aria-label="Node.js Templating (1 item)"&gt;Node.js Templating&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/node-js/npm/" class="tag-cloud-link tag-link-431 tag-link-position-33" style="font-size: 8pt;" aria-label="NPM (1 item)"&gt;NPM&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/object-oriented-javascript/" class="tag-cloud-link tag-link-109 tag-link-position-34" style="font-size: 10.675159235669pt;" aria-label="Object-Oriented JavaScript (3 items)"&gt;Object-Oriented JavaScript&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/css/position/" class="tag-cloud-link tag-link-188 tag-link-position-35" style="font-size: 9.6050955414013pt;" aria-label="Position (2 items)"&gt;Position&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/react/" class="tag-cloud-link tag-link-385 tag-link-position-36" style="font-size: 8pt;" aria-label="React (1 item)"&gt;React&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/react-native/" class="tag-cloud-link tag-link-405 tag-link-position-37" style="font-size: 11.566878980892pt;" aria-label="React Native (4 items)"&gt;React Native&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/javascript/string-prototype/" class="tag-cloud-link tag-link-410 tag-link-position-38" style="font-size: 8pt;" aria-label="String.prototype (1 item)"&gt;String.prototype&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/videos/" class="tag-cloud-link tag-link-312 tag-link-position-39" style="font-size: 9.6050955414013pt;" aria-label="Videos (2 items)"&gt;Videos&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/web-development/" class="tag-cloud-link tag-link-229 tag-link-position-40" style="font-size: 9.6050955414013pt;" aria-label="Web Development (2 items)"&gt;Web Development&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/category/web-performance/" class="tag-cloud-link tag-link-328 tag-link-position-41" style="font-size: 8pt;" aria-label="Web Performance (1 item)"&gt;Web Performance&lt;/a&gt;&lt;/div&gt;
+&lt;/aside&gt;&lt;aside id="tag_cloud-6" class="widget widget_tag_cloud"&gt;&lt;h4 class="widget-title"&gt;Tags&lt;/h4&gt;&lt;div class="tagcloud"&gt;&lt;a href="https://blog.kevinchisholm.com/tag/ajax/" class="tag-cloud-link tag-link-75 tag-link-position-1" style="font-size: 8.5147058823529pt;" aria-label="ajax (7 items)"&gt;ajax&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/angular-2/" class="tag-cloud-link tag-link-265 tag-link-position-2" style="font-size: 15.102941176471pt;" aria-label="angular (34 items)"&gt;angular&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/angular-js/" class="tag-cloud-link tag-link-266 tag-link-position-3" style="font-size: 9.0294117647059pt;" aria-label="angular.js (8 items)"&gt;angular.js&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/array/" class="tag-cloud-link tag-link-6 tag-link-position-4" style="font-size: 13.25pt;" aria-label="array (22 items)"&gt;array&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/asynchronous/" class="tag-cloud-link tag-link-107 tag-link-position-5" style="font-size: 9.5441176470588pt;" aria-label="asynchronous (9 items)"&gt;asynchronous&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/backbone-2/" class="tag-cloud-link tag-link-294 tag-link-position-6" style="font-size: 9.5441176470588pt;" aria-label="backbone (9 items)"&gt;backbone&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/backbone-js/" class="tag-cloud-link tag-link-295 tag-link-position-7" style="font-size: 9.5441176470588pt;" aria-label="backbone.js (9 items)"&gt;backbone.js&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/callback/" class="tag-cloud-link tag-link-105 tag-link-position-8" style="font-size: 8.5147058823529pt;" aria-label="callback (7 items)"&gt;callback&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/cascading-style-sheets/" class="tag-cloud-link tag-link-63 tag-link-position-9" style="font-size: 8pt;" aria-label="Cascading Style Sheets (6 items)"&gt;Cascading Style Sheets&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/class/" class="tag-cloud-link tag-link-194 tag-link-position-10" style="font-size: 8pt;" aria-label="class (6 items)"&gt;class&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/context/" class="tag-cloud-link tag-link-86 tag-link-position-11" style="font-size: 8.5147058823529pt;" aria-label="context (7 items)"&gt;context&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/css-2/" class="tag-cloud-link tag-link-103 tag-link-position-12" style="font-size: 12.220588235294pt;" aria-label="css (17 items)"&gt;css&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/directive/" class="tag-cloud-link tag-link-267 tag-link-position-13" style="font-size: 9.9558823529412pt;" aria-label="directive (10 items)"&gt;directive&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/event/" class="tag-cloud-link tag-link-214 tag-link-position-14" style="font-size: 8.5147058823529pt;" aria-label="event (7 items)"&gt;event&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/express/" class="tag-cloud-link tag-link-255 tag-link-position-15" style="font-size: 8pt;" aria-label="express (6 items)"&gt;express&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/function/" class="tag-cloud-link tag-link-159 tag-link-position-16" style="font-size: 9.0294117647059pt;" aria-label="function (8 items)"&gt;function&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/functions/" class="tag-cloud-link tag-link-15 tag-link-position-17" style="font-size: 12.632352941176pt;" aria-label="functions (19 items)"&gt;functions&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/how-to/" class="tag-cloud-link tag-link-74 tag-link-position-18" style="font-size: 8.5147058823529pt;" aria-label="how to (7 items)"&gt;how to&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/html/" class="tag-cloud-link tag-link-27 tag-link-position-19" style="font-size: 9.5441176470588pt;" aria-label="html (9 items)"&gt;html&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/html5/" class="tag-cloud-link tag-link-30 tag-link-position-20" style="font-size: 11.088235294118pt;" aria-label="html5 (13 items)"&gt;html5&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/http/" class="tag-cloud-link tag-link-140 tag-link-position-21" style="font-size: 9.9558823529412pt;" aria-label="http (10 items)"&gt;http&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/javascript/" class="tag-cloud-link tag-link-4 tag-link-position-22" style="font-size: 22pt;" aria-label="JavaScript (162 items)"&gt;JavaScript&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/jquery-library/" class="tag-cloud-link tag-link-17 tag-link-position-23" style="font-size: 14.279411764706pt;" aria-label="jquery (28 items)"&gt;jquery&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/json/" class="tag-cloud-link tag-link-84 tag-link-position-24" style="font-size: 9.9558823529412pt;" aria-label="json (10 items)"&gt;json&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/lesson/" class="tag-cloud-link tag-link-73 tag-link-position-25" style="font-size: 8.5147058823529pt;" aria-label="lesson (7 items)"&gt;lesson&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/literals/" class="tag-cloud-link tag-link-21 tag-link-position-26" style="font-size: 8pt;" aria-label="literals (6 items)"&gt;literals&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/map/" class="tag-cloud-link tag-link-223 tag-link-position-27" style="font-size: 8pt;" aria-label="map (6 items)"&gt;map&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/module/" class="tag-cloud-link tag-link-115 tag-link-position-28" style="font-size: 10.367647058824pt;" aria-label="module (11 items)"&gt;module&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/node/" class="tag-cloud-link tag-link-138 tag-link-position-29" style="font-size: 13.764705882353pt;" aria-label="node (25 items)"&gt;node&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/node-js/" class="tag-cloud-link tag-link-139 tag-link-position-30" style="font-size: 13.455882352941pt;" aria-label="node.js (23 items)"&gt;node.js&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/npm/" class="tag-cloud-link tag-link-252 tag-link-position-31" style="font-size: 8.5147058823529pt;" aria-label="npm (7 items)"&gt;npm&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/object/" class="tag-cloud-link tag-link-160 tag-link-position-32" style="font-size: 9.9558823529412pt;" aria-label="object (10 items)"&gt;object&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/object-oriented/" class="tag-cloud-link tag-link-13 tag-link-position-33" style="font-size: 11.397058823529pt;" aria-label="object-oriented (14 items)"&gt;object-oriented&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/objects/" class="tag-cloud-link tag-link-7 tag-link-position-34" style="font-size: 12.838235294118pt;" aria-label="objects (20 items)"&gt;objects&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/oop/" class="tag-cloud-link tag-link-8 tag-link-position-35" style="font-size: 10.676470588235pt;" aria-label="oop (12 items)"&gt;oop&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/prototype/" class="tag-cloud-link tag-link-409 tag-link-position-36" style="font-size: 9.0294117647059pt;" aria-label="Prototype (8 items)"&gt;Prototype&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/require/" class="tag-cloud-link tag-link-117 tag-link-position-37" style="font-size: 9.0294117647059pt;" aria-label="require (8 items)"&gt;require&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/route/" class="tag-cloud-link tag-link-270 tag-link-position-38" style="font-size: 8.5147058823529pt;" aria-label="route (7 items)"&gt;route&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/scope/" class="tag-cloud-link tag-link-22 tag-link-position-39" style="font-size: 10.676470588235pt;" aria-label="scope (12 items)"&gt;scope&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/server/" class="tag-cloud-link tag-link-134 tag-link-position-40" style="font-size: 8pt;" aria-label="server (6 items)"&gt;server&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/single-page-application/" class="tag-cloud-link tag-link-296 tag-link-position-41" style="font-size: 9.5441176470588pt;" aria-label="single page application (9 items)"&gt;single page application&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/spa/" class="tag-cloud-link tag-link-297 tag-link-position-42" style="font-size: 9.5441176470588pt;" aria-label="spa (9 items)"&gt;spa&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/this/" class="tag-cloud-link tag-link-55 tag-link-position-43" style="font-size: 9.5441176470588pt;" aria-label="this (9 items)"&gt;this&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/tutorial/" class="tag-cloud-link tag-link-72 tag-link-position-44" style="font-size: 9.0294117647059pt;" aria-label="tutorial (8 items)"&gt;tutorial&lt;/a&gt;
+&lt;a href="https://blog.kevinchisholm.com/tag/view/" class="tag-cloud-link tag-link-269 tag-link-position-45" style="font-size: 8pt;" aria-label="view (6 items)"&gt;view&lt;/a&gt;&lt;/div&gt;
+&lt;/aside&gt;&lt;aside id="text-22" class="widget widget_text"&gt;&lt;h4 class="widget-title"&gt;Contact&lt;/h4&gt;			&lt;div class="textwidget"&gt;&lt;p style="padding: 10px;background-color: #fff;margin-top: 10px;display: block;"&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a href="mailto:blog@kevinchisholm.com"&gt;blog@kevinchisholm.com&lt;/a&gt;&lt;p&gt;
+
+&lt;p style="padding: 10px;background-color: #fff;margin-top: 10px;display: block;"&gt;&lt;strong&gt;Phone:&lt;/strong&gt;: + 1 (212) 465-3196&lt;/p&gt;
+
+&lt;p style="width: 90%;margin: 0 auto;text-align: center;"&gt;
+    &lt;a href="https://twitter.com/kevinchisholm" target="_blank"&gt;&lt;img style="width: 30px"  src="https://sub1.kevinchisholm.com/blog/images/twitter-logo-600.png" /&gt;&lt;/a&gt;
+    
+    &lt;a href="https://www.linkedin.com/in/kevinchisholm/" target="_blank" style="margin-left: 15px;"&gt;&lt;img style="width: 30px" src="https://sub1.kevinchisholm.com/blog/images/linkedIn-logo-600.jpg" /&gt;&lt;/a&gt;
+
+&lt;a href="https://github.com/kevinchisholm?tab=repositories" target="_blank"&gt;&lt;i class="fa fa-github" aria-hidden="true"  style="font-size: 42px;position: relative;top: 10px;margin: 0 10px 0 20px;"&gt;&lt;/i&gt;&lt;/a&gt;
+    
+    &lt;a href="http://www.youtube.com/subscription_center?add_user=kevinchisholmvideo" target="_blank" style="margin-left: 15px;"&gt;&lt;img style="width: 30px" src="http://sub1.kevinchisholm.com/blog/images/youtube-link.png" /&gt;&lt;/a&gt;
+    &lt;/p&gt;&lt;/div&gt;
+		&lt;/aside&gt;&lt;aside id="execphp-2" class="widget widget_execphp"&gt;&lt;h4 class="widget-title"&gt;Coming soon!&lt;/h4&gt;			&lt;div class="execphpwidget"&gt;&lt;div id="scheduled_posts"&gt; &lt;div id="scheduled_posts_header"&gt;&lt;/div&gt;
+&lt;div class="future-posts-container"&gt; &lt;p &gt;&lt;span class="future-post-date"&gt;December, 1&lt;/span&gt; - &lt;span class="future-post-title"&gt;Angular Design Patterns &amp;#8211; Part 1&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt; &lt;div class="future-posts-container"&gt; &lt;p &gt;&lt;span class="future-post-date"&gt;December, 1&lt;/span&gt; - &lt;span class="future-post-title"&gt;JavaScript Destructuring – Basics&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt; &lt;div class="future-posts-container"&gt; &lt;p &gt;&lt;span class="future-post-date"&gt;December, 1&lt;/span&gt; - &lt;span class="future-post-title"&gt;Angular Sibling Communication with Services&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt; &lt;div class="future-posts-container"&gt; &lt;p &gt;&lt;span class="future-post-date"&gt;December, 1&lt;/span&gt; - &lt;span class="future-post-title"&gt;TypeScript  &amp;#8211; Generics  Basics&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt; &lt;div class="future-posts-container"&gt; &lt;p &gt;&lt;span class="future-post-date"&gt;December, 1&lt;/span&gt; - &lt;span class="future-post-title"&gt;Angular Parent to Child Communication with @Input() Part II &amp;#8211; Passing Objects&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt; &lt;div class="future-posts-container"&gt; &lt;p &gt;&lt;span class="future-post-date"&gt;December, 1&lt;/span&gt; - &lt;span class="future-post-title"&gt;Node.js &amp;#8211; process.cwd vs __dirname&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;  &lt;/div&gt;
+
+&lt;style&gt;
+.future-posts-container{
+background-color: #fff;
+padding: 10px;
+}
+
+.future-post-date{
+font-weight: bold;
+color:  #333;
+}
+
+.future-post-title{
+font-weight: bold;
+color:  #7ea4b3;
+}
+&lt;/style&gt;&lt;/div&gt;
+		&lt;/aside&gt;		&lt;aside id="recent-posts-2" class="widget widget_recent_entries"&gt;		&lt;h4 class="widget-title"&gt;Recent Posts&lt;/h4&gt;		&lt;ul&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/css/visibility-hidden-vs-display-none/"&gt;Visibility hidden vs display none &amp;#8211; What is the difference in CSS ?&lt;/a&gt;
+											&lt;span class="post-date"&gt;January 8, 2019&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/jquery/css-method/"&gt;How do I use the jQuery.css() Method?&lt;/a&gt;
+											&lt;span class="post-date"&gt;January 1, 2019&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/css/position/fixed/"&gt;CSS Fixed Position&lt;/a&gt;
+											&lt;span class="post-date"&gt;December 25, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/jquery/fadeout-advanced/"&gt;jQuery fadeOut (advanced)&lt;/a&gt;
+											&lt;span class="post-date"&gt;December 18, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/jquery/fadein-advanced/"&gt;jQuery fadeIn (advanced)&lt;/a&gt;
+											&lt;span class="post-date"&gt;December 11, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/jquery/show-advanced/"&gt;jQuery show (advanced)&lt;/a&gt;
+											&lt;span class="post-date"&gt;December 4, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/jquery/off/"&gt;jQuery.off()&lt;/a&gt;
+											&lt;span class="post-date"&gt;November 27, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/array-prototype/array-unshift/"&gt;JavaScript Array.prototype.unshift()&lt;/a&gt;
+											&lt;span class="post-date"&gt;November 20, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/string-prototype/split/"&gt;JavaScript String.prototype.split()&lt;/a&gt;
+											&lt;span class="post-date"&gt;November 13, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/array-prototype/splice/"&gt;JavaScript Array.prototype.splice()&lt;/a&gt;
+											&lt;span class="post-date"&gt;November 6, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/jquery/fetch-json-data/"&gt;How do I fetch JSON data with jQuery?&lt;/a&gt;
+											&lt;span class="post-date"&gt;October 30, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/array-prototype/shift/"&gt;JavaScript Array.prototype.shift()&lt;/a&gt;
+											&lt;span class="post-date"&gt;October 23, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/css/position/relative/"&gt;CSS Relative Position&lt;/a&gt;
+											&lt;span class="post-date"&gt;October 16, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/combine-arrays/"&gt;How to combine JavaScript arrays&lt;/a&gt;
+											&lt;span class="post-date"&gt;October 9, 2018&lt;/span&gt;
+									&lt;/li&gt;
+											&lt;li&gt;
+					&lt;a href="https://blog.kevinchisholm.com/javascript/jquery/move-dom-elements-appendto/"&gt;How do I move DOM elements with jQuery ?&lt;/a&gt;
+											&lt;span class="post-date"&gt;October 2, 2018&lt;/span&gt;
+									&lt;/li&gt;
+					&lt;/ul&gt;
+		&lt;/aside&gt;	&lt;/div&gt;&lt;!-- #secondary --&gt;
+	
+&lt;/div&gt;
+
+
+	&lt;/div&gt;&lt;!-- #content --&gt;
+
+	&lt;footer id="hs-colophon" class="hs-site-footer"&gt;
+		
+		&lt;div id="hs-bottom-footer"&gt;
+			&lt;div class="hs-container"&gt;
+				&lt;div class="hs-copy-right"&gt;	
+					&amp;copy; Copyright 2019 Kevin Chisholm - Blog				&lt;/div&gt;
+					
+				&lt;div class="hs-site-info"&gt;
+					WordPress Theme					&lt;span class="sep"&gt; | &lt;/span&gt;
+					&lt;a href="https://hashthemes.com/wordpress-theme/hashone/" target="_blank"&gt;Hashone&lt;/a&gt; by Hash Themes				&lt;/div&gt;&lt;!-- #site-info --&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;&lt;!-- #colophon --&gt;
+&lt;/div&gt;&lt;!-- #page --&gt;
+
+&lt;div id="hs-back-top" class="animated hs-hide"&gt;&lt;i class="fa fa-angle-up"&gt;&lt;/i&gt;&lt;/div&gt;
+	
+&lt;!-- START: Syntax Highlighter ComPress --&gt;
+&lt;script type="text/javascript"&gt;
+    SyntaxHighlighter.autoloader(
+        'applescript			https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushAppleScript.js',
+        'actionscript3 as3		https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushAS3.js',
+        'bash shell				https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushBash.js',
+        'coldfusion cf			https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushColdFusion.js',
+        'cpp c					https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushCpp.js',
+        'c# c-sharp csharp		https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushCSharp.js',
+        'css					https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushCss.js',
+        'delphi pascal pas		https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushDelphi.js',
+        'diff patch			    https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushDiff.js',
+        'erl erlang				https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushErlang.js',
+        'groovy					https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushGroovy.js',
+        'java					https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushJava.js',
+        'jfx javafx				https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushJavaFX.js',
+        'js jscript javascript	https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushJScript.js',
+        'perl pl				https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPerl.js',
+        'php					https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPhp.js',
+        'text plain				https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPlain.js',
+        'powershell ps          https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPowerShell.js',
+        'py python				https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPython.js',
+        'ruby rails ror rb		https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushRuby.js',
+        'sass scss              https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushSass.js',
+        'scala					https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushScala.js',
+        'sql					https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushSql.js',
+        'vb vbnet				https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushVb.js',
+        'xml xhtml xslt html	https://blog.kevinchisholm.com/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushXml.js'
+    );
+                        SyntaxHighlighter.defaults['tab-size'] = 4;
+    SyntaxHighlighter.all();
+&lt;/script&gt;
+&lt;!-- END: Syntax Highlighter ComPress --&gt;
+
+	&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/jquery.bxslider.js?ver=4.1.2'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/owl.carousel.js?ver=1.3.3'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/isotope.pkgd.js?ver=20150903'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/nivo-lightbox.js?ver=20150903'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/jquery.stellar.js?ver=20150903'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/wow.js?ver=20150903'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/odometer.js?ver=20150903'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/waypoint.js?ver=20150903'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/jquery.nav.js?ver=20161003'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/SmoothScroll.js?ver=20150903'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-content/themes/hashone/js/hashone-custom.js?ver=20150903'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='https://blog.kevinchisholm.com/wp-includes/js/wp-embed.min.js?ver=4.9.9'&gt;&lt;/script&gt;
+&lt;!-- Clicky Web Analytics - https://clicky.com, WordPress Plugin by Yoast - https://yoast.com/wordpress/plugins/clicky/ --&gt;&lt;script type='text/javascript'&gt;
+	function clicky_gc(name) {
+		var ca = document.cookie.split(';');
+		for (var i in ca) {
+			if (ca[i].indexOf(name + '=') != -1) {
+				return decodeURIComponent(ca[i].split('=')[1]);
+			}
+		}
+		return '';
+	}
+	var username_check = clicky_gc('comment_author_e240b8070d194d5b9b84cf15bd2ad890');
+	if (username_check) var clicky_custom_session = {username: username_check};
+&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+		var clicky = { log : function () { return true;	}, goal: function () { return true;	} };
+	var clicky_site_id = 66374009;
+	(function () {
+		var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//static.getclicky.com/js';
+		( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild(s);
+	})();
+&lt;/script&gt;
+&lt;noscript&gt;&lt;p&gt;&lt;img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66374009ns.gif" /&gt;&lt;/p&gt;&lt;/noscript&gt;
+
+&lt;!-- START KEVIN --&gt;
+&lt;script src="//cdn.optimizely.com/js/1261650283.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+(function () {
+    var uniqueNum = new Date().getTime(),
+        jsURL = 'https://sub1.kevinchisholm.com/blog/js/blog.kevinchisholm.com-app.js?ver=' + uniqueNum,
+        script=document.createElement('script');
+
+    script.setAttribute('src', jsURL);
+    document.getElementsByTagName("body")[0].appendChild(script);
+})();
+&lt;/script&gt;
+&lt;!-- END KEVIN --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+        </section>
+
+            
+
+</body></html>
